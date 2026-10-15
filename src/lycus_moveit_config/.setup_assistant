@@ -1,0 +1,19 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: lycus_description
+    relative_path: urdf/lycus.urdf
+  srdf:
+    relative_path: config/lycus.srdf
+  package_settings:
+    author_name: victor
+    author_email: victor@todo.todo
+    generated_timestamp: 1757568000
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro

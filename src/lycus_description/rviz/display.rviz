@@ -1,0 +1,712 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 70
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /MarkerArray1
+        - /TF1
+        - /TF1/Frames1
+      Splitter Ratio: 0.5
+    Tree Height: 300
+  - Class: rviz_common/Help
+    Name: Help
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_visual_tools/RvizVisualToolsGui
+    Name: RvizVisualToolsGui
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Acceleration_Scaling_Factor: 0.1
+      Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: false
+      Move Group Namespace: ""
+      MoveIt_Allow_Approximate_IK: false
+      MoveIt_Allow_External_Program: false
+      MoveIt_Allow_Replanning: false
+      MoveIt_Allow_Sensor_Positioning: false
+      MoveIt_Planning_Attempts: 10
+      MoveIt_Planning_Time: 5
+      MoveIt_Use_Cartesian_Path: false
+      MoveIt_Use_Constraint_Aware_IK: false
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
+      Name: MotionPlanning
+      Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
+        Links:
+          AR5-5_08L-W4C1C9-ZY2_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_flan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          AR5-5_08L-W4C1C9-ZY2_link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_flan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          AR5-5_08R-W4C1C9-ZY2_link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          All Links Enabled: true
+          Calf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Chassis_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Chest_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Head_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HouyuyanL_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HouyuyanR_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Link Tree Style: Links in Alphabetic Order
+          Neck_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Qianyuyan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Shuangmu_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Thigh_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Waist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel4_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Loop Animation: false
+        Robot Alpha: 0.5
+        Robot Color: 150; 50; 150
+        Show Robot Collision: false
+        Show Robot Visual: true
+        Show Trail: false
+        State Display Time: 0.05 s
+        Trail Step Size: 1
+        Trajectory Topic: display_planned_path
+        Use Sim Time: false
+      Planning Metrics:
+        Payload: 1
+        Show Joint Torques: false
+        Show Manipulability: false
+        Show Manipulability Index: false
+        Show Weight Limit: false
+        TextHeight: 0.07999999821186066
+      Planning Request:
+        Colliding Link Color: 255; 0; 0
+        Goal State Alpha: 1
+        Goal State Color: 250; 128; 0
+        Interactive Marker Size: 0
+        Joint Violation Color: 255; 0; 255
+        Planning Group: left_arm
+        Query Goal State: true
+        Query Start State: false
+        Show Workspace: false
+        Start State Alpha: 1
+        Start State Color: 0; 255; 0
+      Planning Scene Topic: monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 1
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.009999999776482582
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          AR5-5_08L-W4C1C9-ZY2_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_flan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          AR5-5_08L-W4C1C9-ZY2_link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08L-W4C1C9-ZY2_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_flan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          AR5-5_08R-W4C1C9-ZY2_link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C9-ZY2_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          All Links Enabled: true
+          Calf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Chassis_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Chest_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Head_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HouyuyanL_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HouyuyanR_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Link Tree Style: Links in Alphabetic Order
+          Neck_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Qianyuyan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Shuangmu_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Thigh_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Waist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Wheel4_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+      Velocity_Scaling_Factor: 0.1
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: MarkerArray
+      Namespaces:
+        Path: true
+        Sphere: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /lycus_motion_trajectory
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        AR5-5_08L-W4C1C9-ZY2_base:
+          Value: true
+        AR5-5_08L-W4C1C9-ZY2_flan_link:
+          Value: false
+        AR5-5_08L-W4C1C9-ZY2_link1:
+          Value: false
+        AR5-5_08L-W4C1C9-ZY2_link2:
+          Value: false
+        AR5-5_08L-W4C1C9-ZY2_link3:
+          Value: false
+        AR5-5_08L-W4C1C9-ZY2_link4:
+          Value: false
+        AR5-5_08L-W4C1C9-ZY2_link5:
+          Value: false
+        AR5-5_08L-W4C1C9-ZY2_link6:
+          Value: false
+        AR5-5_08L-W4C1C9-ZY2_link7:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_base:
+          Value: true
+        AR5-5_08R-W4C1C9-ZY2_flan_link:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_link1:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_link2:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_link3:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_link4:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_link5:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_link6:
+          Value: false
+        AR5-5_08R-W4C1C9-ZY2_link7:
+          Value: false
+        All Enabled: true
+        Calf_link:
+          Value: false
+        Chassis_link:
+          Value: false
+        Chest_link:
+          Value: false
+        Head_link:
+          Value: false
+        HouyuyanL_link:
+          Value: false
+        HouyuyanR_link:
+          Value: false
+        Neck_link:
+          Value: false
+        Qianyuyan_link:
+          Value: false
+        Shuangmu_link:
+          Value: false
+        Thigh_link:
+          Value: false
+        Waist_link:
+          Value: false
+        Wheel1_link:
+          Value: false
+        Wheel2_link:
+          Value: false
+        Wheel3_link:
+          Value: false
+        Wheel4_link:
+          Value: false
+        base_link:
+          Value: false
+        left_arm_ee_link:
+          Value: true
+        right_arm_ee_link:
+          Value: true
+        world:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          base_link:
+            Chassis_link:
+              Calf_link:
+                Thigh_link:
+                  Waist_link:
+                    Chest_link:
+                      AR5-5_08L-W4C1C9-ZY2_base:
+                        AR5-5_08L-W4C1C9-ZY2_link1:
+                          AR5-5_08L-W4C1C9-ZY2_link2:
+                            AR5-5_08L-W4C1C9-ZY2_link3:
+                              AR5-5_08L-W4C1C9-ZY2_link4:
+                                AR5-5_08L-W4C1C9-ZY2_link5:
+                                  AR5-5_08L-W4C1C9-ZY2_link6:
+                                    AR5-5_08L-W4C1C9-ZY2_link7:
+                                      AR5-5_08L-W4C1C9-ZY2_flan_link:
+                                        left_arm_ee_link:
+                                          {}
+                      AR5-5_08R-W4C1C9-ZY2_base:
+                        AR5-5_08R-W4C1C9-ZY2_link1:
+                          AR5-5_08R-W4C1C9-ZY2_link2:
+                            AR5-5_08R-W4C1C9-ZY2_link3:
+                              AR5-5_08R-W4C1C9-ZY2_link4:
+                                AR5-5_08R-W4C1C9-ZY2_link5:
+                                  AR5-5_08R-W4C1C9-ZY2_link6:
+                                    AR5-5_08R-W4C1C9-ZY2_link7:
+                                      AR5-5_08R-W4C1C9-ZY2_flan_link:
+                                        right_arm_ee_link:
+                                          {}
+                      Neck_link:
+                        Head_link:
+                          HouyuyanL_link:
+                            {}
+                          HouyuyanR_link:
+                            {}
+                          Qianyuyan_link:
+                            {}
+                          Shuangmu_link:
+                            {}
+              Wheel1_link:
+                {}
+              Wheel2_link:
+                {}
+              Wheel3_link:
+                {}
+              Wheel4_link:
+                {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 4.849226474761963
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.6144275665283203
+        Y: 1.0282279253005981
+        Z: 0.5045879483222961
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.5450001358985901
+      Target Frame: world
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 6.065177917480469
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 692
+  Help:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: false
+  MotionPlanning:
+    collapsed: false
+  MotionPlanning - Trajectory Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b40000025afc0200000004fc0000003d000001cc0000019a0100001cfa000000020100000003fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000000ffffffff000001e500fffffffb000000100044006900730070006c0061007900730100000000000002b40000015600fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c0069006400650072010000020f000000410000004100fffffffb0000000800480065006c0070000000029a0000006e0000006e00fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c00730047007500690100000256000000410000004100ffffff000004800000025a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  RvizVisualToolsGui:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1850
+  X: 117
+  Y: 252

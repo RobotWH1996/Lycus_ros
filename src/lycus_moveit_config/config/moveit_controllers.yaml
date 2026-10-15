@@ -1,0 +1,69 @@
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - left_arm_controller
+    - right_arm_controller
+    - both_arms_controller
+    - torso_controller
+    - head_controller
+
+  left_arm_controller:
+    type: FollowJointTrajectory
+    joints:
+      - AR5-5_08L-W4C1C9-ZY2_joint_1
+      - AR5-5_08L-W4C1C9-ZY2_joint_2
+      - AR5-5_08L-W4C1C9-ZY2_joint_3
+      - AR5-5_08L-W4C1C9-ZY2_joint_4
+      - AR5-5_08L-W4C1C9-ZY2_joint_5
+      - AR5-5_08L-W4C1C9-ZY2_joint_6
+      - AR5-5_08L-W4C1C9-ZY2_joint_7
+    action_ns: follow_joint_trajectory
+    default: true
+  right_arm_controller:
+    type: FollowJointTrajectory
+    joints:
+      - AR5-5_08R-W4C1C9-ZY2_joint_1
+      - AR5-5_08R-W4C1C9-ZY2_joint_2
+      - AR5-5_08R-W4C1C9-ZY2_joint_3
+      - AR5-5_08R-W4C1C9-ZY2_joint_4
+      - AR5-5_08R-W4C1C9-ZY2_joint_5
+      - AR5-5_08R-W4C1C9-ZY2_joint_6
+      - AR5-5_08R-W4C1C9-ZY2_joint_7
+    action_ns: follow_joint_trajectory
+    default: true
+  both_arms_controller:
+    type: FollowJointTrajectory
+    joints:
+      - AR5-5_08L-W4C1C9-ZY2_joint_1
+      - AR5-5_08L-W4C1C9-ZY2_joint_2
+      - AR5-5_08L-W4C1C9-ZY2_joint_3
+      - AR5-5_08L-W4C1C9-ZY2_joint_4
+      - AR5-5_08L-W4C1C9-ZY2_joint_5
+      - AR5-5_08L-W4C1C9-ZY2_joint_6
+      - AR5-5_08L-W4C1C9-ZY2_joint_7
+      - AR5-5_08R-W4C1C9-ZY2_joint_1
+      - AR5-5_08R-W4C1C9-ZY2_joint_2
+      - AR5-5_08R-W4C1C9-ZY2_joint_3
+      - AR5-5_08R-W4C1C9-ZY2_joint_4
+      - AR5-5_08R-W4C1C9-ZY2_joint_5
+      - AR5-5_08R-W4C1C9-ZY2_joint_6
+      - AR5-5_08R-W4C1C9-ZY2_joint_7
+    action_ns: follow_joint_trajectory
+    default: false
+  torso_controller:
+    type: FollowJointTrajectory
+    joints:
+      - Calf-joint
+      - Thigh-joint
+      - Waist-joint
+      - Chest-joint
+    action_ns: follow_joint_trajectory
+    default: true
+  head_controller:
+    type: FollowJointTrajectory
+    joints:
+      - Neck-joint
+      - Head-joint
+    action_ns: follow_joint_trajectory
+    default: true

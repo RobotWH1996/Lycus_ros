@@ -1,0 +1,10 @@
+# colcon / CMake 编译产物
+build/
+install/
+log/
+
+# clangd 等本地编译索引
+.cache/
+
+# 本机 Cursor 规则
+.cursor/

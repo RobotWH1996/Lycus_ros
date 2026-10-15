@@ -1,0 +1,123 @@
+default_velocity_scaling_factor: 0.1
+default_acceleration_scaling_factor: 0.1
+joint_limits:
+  AR5-5_08L-W4C1C9-ZY2_joint_1:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08L-W4C1C9-ZY2_joint_2:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08L-W4C1C9-ZY2_joint_3:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08L-W4C1C9-ZY2_joint_4:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08L-W4C1C9-ZY2_joint_5:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08L-W4C1C9-ZY2_joint_6:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08L-W4C1C9-ZY2_joint_7:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08R-W4C1C9-ZY2_joint_1:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08R-W4C1C9-ZY2_joint_2:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08R-W4C1C9-ZY2_joint_3:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08R-W4C1C9-ZY2_joint_4:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08R-W4C1C9-ZY2_joint_5:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08R-W4C1C9-ZY2_joint_6:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  AR5-5_08R-W4C1C9-ZY2_joint_7:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  Calf-joint:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  Thigh-joint:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  Waist-joint:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  Chest-joint:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  Neck-joint:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  Head-joint:
+    has_velocity_limits: true
+    max_velocity: 1.5
+    has_acceleration_limits: true
+    max_acceleration: 3.0
+  Whee1-joint:
+    has_velocity_limits: false
+    max_velocity: 1.5
+    has_acceleration_limits: false
+    max_acceleration: 3.0
+  Whee2-joint:
+    has_velocity_limits: false
+    max_velocity: 1.5
+    has_acceleration_limits: false
+    max_acceleration: 3.0
+  Whee3-joint:
+    has_velocity_limits: false
+    max_velocity: 1.5
+    has_acceleration_limits: false
+    max_acceleration: 3.0
+  Whee4-joint:
+    has_velocity_limits: false
+    max_velocity: 1.5
+    has_acceleration_limits: false
+    max_acceleration: 3.0
