@@ -2,6 +2,9 @@
 <!-- Lycus URDF: SolidWorks export + ROS 2 world/base/ee frames -->
 <robot
   name="lycus">
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
   <link name="world"/>
   <link name="base_link">
     <inertial>
