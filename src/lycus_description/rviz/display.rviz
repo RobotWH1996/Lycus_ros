@@ -91,90 +91,90 @@ Visualization Manager:
         Color Enabled: false
         Interrupt Display: false
         Links:
-          AR5-5_08L-W4C1C9-ZY2_base:
+          AR5-5_08L-W4C1C5-ZY2_base:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_flan_link:
+          AR5-5_08L-W4C1C5-ZY2_flan_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          AR5-5_08L-W4C1C9-ZY2_link1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          AR5-5_08L-W4C1C9-ZY2_link2:
+          AR5-5_08L-W4C1C5-ZY2_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link3:
+          AR5-5_08L-W4C1C5-ZY2_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link4:
+          AR5-5_08L-W4C1C5-ZY2_link3:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link5:
+          AR5-5_08L-W4C1C5-ZY2_link4:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link6:
+          AR5-5_08L-W4C1C5-ZY2_link5:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link7:
+          AR5-5_08L-W4C1C5-ZY2_link6:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_base:
+          AR5-5_08L-W4C1C5-ZY2_link7:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_flan_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          AR5-5_08R-W4C1C9-ZY2_link1:
+          AR5-5_08R-W4C1C5-ZY2_base:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link2:
+          AR5-5_08R-W4C1C5-ZY2_flan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          AR5-5_08R-W4C1C5-ZY2_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link3:
+          AR5-5_08R-W4C1C5-ZY2_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link4:
+          AR5-5_08R-W4C1C5-ZY2_link3:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link5:
+          AR5-5_08R-W4C1C5-ZY2_link4:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link6:
+          AR5-5_08R-W4C1C5-ZY2_link5:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link7:
+          AR5-5_08R-W4C1C5-ZY2_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C5-ZY2_link7:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -203,12 +203,12 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          HouyuyanL_link:
+          RGB2_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          HouyuyanR_link:
+          RGB3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -219,12 +219,12 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          Qianyuyan_link:
+          RGB1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          Shuangmu_link:
+          HeadRGBD_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -316,90 +316,90 @@ Visualization Manager:
       Scene Robot:
         Attached Body Color: 150; 50; 150
         Links:
-          AR5-5_08L-W4C1C9-ZY2_base:
+          AR5-5_08L-W4C1C5-ZY2_base:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_flan_link:
+          AR5-5_08L-W4C1C5-ZY2_flan_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          AR5-5_08L-W4C1C9-ZY2_link1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          AR5-5_08L-W4C1C9-ZY2_link2:
+          AR5-5_08L-W4C1C5-ZY2_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link3:
+          AR5-5_08L-W4C1C5-ZY2_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link4:
+          AR5-5_08L-W4C1C5-ZY2_link3:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link5:
+          AR5-5_08L-W4C1C5-ZY2_link4:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link6:
+          AR5-5_08L-W4C1C5-ZY2_link5:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08L-W4C1C9-ZY2_link7:
+          AR5-5_08L-W4C1C5-ZY2_link6:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_base:
+          AR5-5_08L-W4C1C5-ZY2_link7:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_flan_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          AR5-5_08R-W4C1C9-ZY2_link1:
+          AR5-5_08R-W4C1C5-ZY2_base:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link2:
+          AR5-5_08R-W4C1C5-ZY2_flan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          AR5-5_08R-W4C1C5-ZY2_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link3:
+          AR5-5_08R-W4C1C5-ZY2_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link4:
+          AR5-5_08R-W4C1C5-ZY2_link3:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link5:
+          AR5-5_08R-W4C1C5-ZY2_link4:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link6:
+          AR5-5_08R-W4C1C5-ZY2_link5:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          AR5-5_08R-W4C1C9-ZY2_link7:
+          AR5-5_08R-W4C1C5-ZY2_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          AR5-5_08R-W4C1C5-ZY2_link7:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -428,12 +428,12 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          HouyuyanL_link:
+          RGB2_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          HouyuyanR_link:
+          RGB3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -444,12 +444,12 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          Qianyuyan_link:
+          RGB1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          Shuangmu_link:
+          HeadRGBD_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -522,41 +522,41 @@ Visualization Manager:
       Enabled: true
       Frame Timeout: 15
       Frames:
-        AR5-5_08L-W4C1C9-ZY2_base:
+        AR5-5_08L-W4C1C5-ZY2_base:
           Value: true
-        AR5-5_08L-W4C1C9-ZY2_flan_link:
+        AR5-5_08L-W4C1C5-ZY2_flan_link:
           Value: false
-        AR5-5_08L-W4C1C9-ZY2_link1:
+        AR5-5_08L-W4C1C5-ZY2_link1:
           Value: false
-        AR5-5_08L-W4C1C9-ZY2_link2:
+        AR5-5_08L-W4C1C5-ZY2_link2:
           Value: false
-        AR5-5_08L-W4C1C9-ZY2_link3:
+        AR5-5_08L-W4C1C5-ZY2_link3:
           Value: false
-        AR5-5_08L-W4C1C9-ZY2_link4:
+        AR5-5_08L-W4C1C5-ZY2_link4:
           Value: false
-        AR5-5_08L-W4C1C9-ZY2_link5:
+        AR5-5_08L-W4C1C5-ZY2_link5:
           Value: false
-        AR5-5_08L-W4C1C9-ZY2_link6:
+        AR5-5_08L-W4C1C5-ZY2_link6:
           Value: false
-        AR5-5_08L-W4C1C9-ZY2_link7:
+        AR5-5_08L-W4C1C5-ZY2_link7:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_base:
+        AR5-5_08R-W4C1C5-ZY2_base:
           Value: true
-        AR5-5_08R-W4C1C9-ZY2_flan_link:
+        AR5-5_08R-W4C1C5-ZY2_flan_link:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_link1:
+        AR5-5_08R-W4C1C5-ZY2_link1:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_link2:
+        AR5-5_08R-W4C1C5-ZY2_link2:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_link3:
+        AR5-5_08R-W4C1C5-ZY2_link3:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_link4:
+        AR5-5_08R-W4C1C5-ZY2_link4:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_link5:
+        AR5-5_08R-W4C1C5-ZY2_link5:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_link6:
+        AR5-5_08R-W4C1C5-ZY2_link6:
           Value: false
-        AR5-5_08R-W4C1C9-ZY2_link7:
+        AR5-5_08R-W4C1C5-ZY2_link7:
           Value: false
         All Enabled: true
         Calf_link:
@@ -567,15 +567,15 @@ Visualization Manager:
           Value: false
         Head_link:
           Value: false
-        HouyuyanL_link:
+        RGB2_link:
           Value: false
-        HouyuyanR_link:
+        RGB3_link:
           Value: false
         Neck_link:
           Value: false
-        Qianyuyan_link:
+        RGB1_link:
           Value: false
-        Shuangmu_link:
+        HeadRGBD_link:
           Value: false
         Thigh_link:
           Value: false
@@ -610,37 +610,37 @@ Visualization Manager:
                 Thigh_link:
                   Waist_link:
                     Chest_link:
-                      AR5-5_08L-W4C1C9-ZY2_base:
-                        AR5-5_08L-W4C1C9-ZY2_link1:
-                          AR5-5_08L-W4C1C9-ZY2_link2:
-                            AR5-5_08L-W4C1C9-ZY2_link3:
-                              AR5-5_08L-W4C1C9-ZY2_link4:
-                                AR5-5_08L-W4C1C9-ZY2_link5:
-                                  AR5-5_08L-W4C1C9-ZY2_link6:
-                                    AR5-5_08L-W4C1C9-ZY2_link7:
-                                      AR5-5_08L-W4C1C9-ZY2_flan_link:
+                      AR5-5_08L-W4C1C5-ZY2_base:
+                        AR5-5_08L-W4C1C5-ZY2_link1:
+                          AR5-5_08L-W4C1C5-ZY2_link2:
+                            AR5-5_08L-W4C1C5-ZY2_link3:
+                              AR5-5_08L-W4C1C5-ZY2_link4:
+                                AR5-5_08L-W4C1C5-ZY2_link5:
+                                  AR5-5_08L-W4C1C5-ZY2_link6:
+                                    AR5-5_08L-W4C1C5-ZY2_link7:
+                                      AR5-5_08L-W4C1C5-ZY2_flan_link:
                                         left_arm_ee_link:
                                           {}
-                      AR5-5_08R-W4C1C9-ZY2_base:
-                        AR5-5_08R-W4C1C9-ZY2_link1:
-                          AR5-5_08R-W4C1C9-ZY2_link2:
-                            AR5-5_08R-W4C1C9-ZY2_link3:
-                              AR5-5_08R-W4C1C9-ZY2_link4:
-                                AR5-5_08R-W4C1C9-ZY2_link5:
-                                  AR5-5_08R-W4C1C9-ZY2_link6:
-                                    AR5-5_08R-W4C1C9-ZY2_link7:
-                                      AR5-5_08R-W4C1C9-ZY2_flan_link:
+                      AR5-5_08R-W4C1C5-ZY2_base:
+                        AR5-5_08R-W4C1C5-ZY2_link1:
+                          AR5-5_08R-W4C1C5-ZY2_link2:
+                            AR5-5_08R-W4C1C5-ZY2_link3:
+                              AR5-5_08R-W4C1C5-ZY2_link4:
+                                AR5-5_08R-W4C1C5-ZY2_link5:
+                                  AR5-5_08R-W4C1C5-ZY2_link6:
+                                    AR5-5_08R-W4C1C5-ZY2_link7:
+                                      AR5-5_08R-W4C1C5-ZY2_flan_link:
                                         right_arm_ee_link:
                                           {}
                       Neck_link:
                         Head_link:
-                          HouyuyanL_link:
+                          RGB2_link:
                             {}
-                          HouyuyanR_link:
+                          RGB3_link:
                             {}
-                          Qianyuyan_link:
+                          RGB1_link:
                             {}
-                          Shuangmu_link:
+                          HeadRGBD_link:
                             {}
               Wheel1_link:
                 {}

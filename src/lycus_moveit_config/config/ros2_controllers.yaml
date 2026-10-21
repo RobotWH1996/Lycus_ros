@@ -19,13 +19,13 @@ controller_manager:
 left_arm_controller:
   ros__parameters:
     joints:
-      - AR5-5_08L-W4C1C9-ZY2_joint_1
-      - AR5-5_08L-W4C1C9-ZY2_joint_2
-      - AR5-5_08L-W4C1C9-ZY2_joint_3
-      - AR5-5_08L-W4C1C9-ZY2_joint_4
-      - AR5-5_08L-W4C1C9-ZY2_joint_5
-      - AR5-5_08L-W4C1C9-ZY2_joint_6
-      - AR5-5_08L-W4C1C9-ZY2_joint_7
+      - AR5-5_08L-W4C1C5-ZY2_joint_1
+      - AR5-5_08L-W4C1C5-ZY2_joint_2
+      - AR5-5_08L-W4C1C5-ZY2_joint_3
+      - AR5-5_08L-W4C1C5-ZY2_joint_4
+      - AR5-5_08L-W4C1C5-ZY2_joint_5
+      - AR5-5_08L-W4C1C5-ZY2_joint_6
+      - AR5-5_08L-W4C1C5-ZY2_joint_7
     command_interfaces:
       - position
     state_interfaces:
@@ -34,13 +34,13 @@ left_arm_controller:
 right_arm_controller:
   ros__parameters:
     joints:
-      - AR5-5_08R-W4C1C9-ZY2_joint_1
-      - AR5-5_08R-W4C1C9-ZY2_joint_2
-      - AR5-5_08R-W4C1C9-ZY2_joint_3
-      - AR5-5_08R-W4C1C9-ZY2_joint_4
-      - AR5-5_08R-W4C1C9-ZY2_joint_5
-      - AR5-5_08R-W4C1C9-ZY2_joint_6
-      - AR5-5_08R-W4C1C9-ZY2_joint_7
+      - AR5-5_08R-W4C1C5-ZY2_joint_1
+      - AR5-5_08R-W4C1C5-ZY2_joint_2
+      - AR5-5_08R-W4C1C5-ZY2_joint_3
+      - AR5-5_08R-W4C1C5-ZY2_joint_4
+      - AR5-5_08R-W4C1C5-ZY2_joint_5
+      - AR5-5_08R-W4C1C5-ZY2_joint_6
+      - AR5-5_08R-W4C1C5-ZY2_joint_7
     command_interfaces:
       - position
     state_interfaces:
@@ -49,20 +49,20 @@ right_arm_controller:
 both_arms_controller:
   ros__parameters:
     joints:
-      - AR5-5_08L-W4C1C9-ZY2_joint_1
-      - AR5-5_08L-W4C1C9-ZY2_joint_2
-      - AR5-5_08L-W4C1C9-ZY2_joint_3
-      - AR5-5_08L-W4C1C9-ZY2_joint_4
-      - AR5-5_08L-W4C1C9-ZY2_joint_5
-      - AR5-5_08L-W4C1C9-ZY2_joint_6
-      - AR5-5_08L-W4C1C9-ZY2_joint_7
-      - AR5-5_08R-W4C1C9-ZY2_joint_1
-      - AR5-5_08R-W4C1C9-ZY2_joint_2
-      - AR5-5_08R-W4C1C9-ZY2_joint_3
-      - AR5-5_08R-W4C1C9-ZY2_joint_4
-      - AR5-5_08R-W4C1C9-ZY2_joint_5
-      - AR5-5_08R-W4C1C9-ZY2_joint_6
-      - AR5-5_08R-W4C1C9-ZY2_joint_7
+      - AR5-5_08L-W4C1C5-ZY2_joint_1
+      - AR5-5_08L-W4C1C5-ZY2_joint_2
+      - AR5-5_08L-W4C1C5-ZY2_joint_3
+      - AR5-5_08L-W4C1C5-ZY2_joint_4
+      - AR5-5_08L-W4C1C5-ZY2_joint_5
+      - AR5-5_08L-W4C1C5-ZY2_joint_6
+      - AR5-5_08L-W4C1C5-ZY2_joint_7
+      - AR5-5_08R-W4C1C5-ZY2_joint_1
+      - AR5-5_08R-W4C1C5-ZY2_joint_2
+      - AR5-5_08R-W4C1C5-ZY2_joint_3
+      - AR5-5_08R-W4C1C5-ZY2_joint_4
+      - AR5-5_08R-W4C1C5-ZY2_joint_5
+      - AR5-5_08R-W4C1C5-ZY2_joint_6
+      - AR5-5_08R-W4C1C5-ZY2_joint_7
     command_interfaces:
       - position
     state_interfaces:
@@ -71,10 +71,10 @@ both_arms_controller:
 torso_controller:
   ros__parameters:
     joints:
-      - Calf-joint
-      - Thigh-joint
-      - Waist-joint
-      - Chest-joint
+      - Calf_joint
+      - Thigh_joint
+      - Waist_joint
+      - Chest_joint
     command_interfaces:
       - position
     state_interfaces:
@@ -83,8 +83,8 @@ torso_controller:
 head_controller:
   ros__parameters:
     joints:
-      - Neck-joint
-      - Head-joint
+      - Neck_joint
+      - Head_joint
     command_interfaces:
       - position
     state_interfaces:
