@@ -23,6 +23,8 @@ class CustomJointStatePublisher(Node):
                 "Wheel2_joint",
                 "Wheel3_joint",
                 "Wheel4_joint",
+                "left_gripper",
+                "right_gripper",
             ]
         )
         self.joint_positions = [0.0] * len(self.joint_names)

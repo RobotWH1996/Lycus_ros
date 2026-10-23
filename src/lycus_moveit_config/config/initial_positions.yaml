@@ -22,6 +22,8 @@ initial_positions:
   Chest_joint: 0.0
   Neck_joint:  0.0
   Head_joint:  0.4
+  left_gripper: 0.0
+  right_gripper: 0.0
   Wheel1_joint: 0.0
   Wheel2_joint: 0.0
   Wheel3_joint: 0.0

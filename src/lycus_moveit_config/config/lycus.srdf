@@ -42,6 +42,9 @@
         <joint name="AR5-5_08R-W4C1C5-ZY2_joint_7" value="0"/>
     </group_state>
 
+    <passive_joint name="left_gripper_mimic"/>
+    <passive_joint name="right_gripper_mimic"/>
+
     <disable_collisions link1="world" link2="base_link" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="Chassis_link" reason="Adjacent"/>
     <disable_collisions link1="Chassis_link" link2="Wheel1_link" reason="Adjacent"/>
@@ -70,7 +73,11 @@
     <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link5" link2="AR5-5_08L-W4C1C5-ZY2_link6" reason="Adjacent"/>
     <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link6" link2="AR5-5_08L-W4C1C5-ZY2_link7" reason="Adjacent"/>
     <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link7" link2="AR5-5_08L-W4C1C5-ZY2_flan_link" reason="Adjacent"/>
-    <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_flan_link" link2="left_arm_ee_link" reason="Adjacent"/>
+    <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_flan_link" link2="left_gripper_base" reason="Adjacent"/>
+    <disable_collisions link1="left_gripper_base" link2="left_gripper_right_jaw" reason="Adjacent"/>
+    <disable_collisions link1="left_gripper_base" link2="left_gripper_left_jaw" reason="Adjacent"/>
+    <disable_collisions link1="left_gripper_base" link2="left_arm_ee_link" reason="Adjacent"/>
+    <disable_collisions link1="left_gripper_left_jaw" link2="left_gripper_right_jaw" reason="Never"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_base" link2="AR5-5_08R-W4C1C5-ZY2_link1" reason="Adjacent"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link1" link2="AR5-5_08R-W4C1C5-ZY2_link2" reason="Adjacent"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link2" link2="AR5-5_08R-W4C1C5-ZY2_link3" reason="Adjacent"/>
@@ -79,7 +86,11 @@
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link5" link2="AR5-5_08R-W4C1C5-ZY2_link6" reason="Adjacent"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link6" link2="AR5-5_08R-W4C1C5-ZY2_link7" reason="Adjacent"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link7" link2="AR5-5_08R-W4C1C5-ZY2_flan_link" reason="Adjacent"/>
-    <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_flan_link" link2="right_arm_ee_link" reason="Adjacent"/>
+    <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_flan_link" link2="right_gripper_base" reason="Adjacent"/>
+    <disable_collisions link1="right_gripper_base" link2="right_gripper_right_jaw" reason="Adjacent"/>
+    <disable_collisions link1="right_gripper_base" link2="right_gripper_left_jaw" reason="Adjacent"/>
+    <disable_collisions link1="right_gripper_base" link2="right_arm_ee_link" reason="Adjacent"/>
+    <disable_collisions link1="right_gripper_left_jaw" link2="right_gripper_right_jaw" reason="Never"/>
 
     <!-- CAD visual STLs overlap skip-one neighbors even in valid poses. -->
     <disable_collisions link1="Chassis_link" link2="Thigh_link" reason="Never"/>
@@ -111,6 +122,7 @@
     <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link4" link2="AR5-5_08L-W4C1C5-ZY2_link6" reason="Never"/>
     <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link5" link2="AR5-5_08L-W4C1C5-ZY2_link7" reason="Never"/>
     <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link6" link2="AR5-5_08L-W4C1C5-ZY2_flan_link" reason="Never"/>
+    <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link7" link2="left_gripper_base" reason="Never"/>
     <disable_collisions link1="AR5-5_08L-W4C1C5-ZY2_link7" link2="left_arm_ee_link" reason="Never"/>
 
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_base" link2="AR5-5_08R-W4C1C5-ZY2_link2" reason="Never"/>
@@ -120,5 +132,6 @@
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link4" link2="AR5-5_08R-W4C1C5-ZY2_link6" reason="Never"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link5" link2="AR5-5_08R-W4C1C5-ZY2_link7" reason="Never"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link6" link2="AR5-5_08R-W4C1C5-ZY2_flan_link" reason="Never"/>
+    <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link7" link2="right_gripper_base" reason="Never"/>
     <disable_collisions link1="AR5-5_08R-W4C1C5-ZY2_link7" link2="right_arm_ee_link" reason="Never"/>
 </robot>
