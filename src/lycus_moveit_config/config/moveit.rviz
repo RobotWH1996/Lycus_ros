@@ -9,7 +9,7 @@ Panels:
         - /MotionPlanning1/Planned Path1
         - /TF1/Frames1
       Splitter Ratio: 0.5
-    Tree Height: 365
+    Tree Height: 307
   - Class: rviz_common/Help
     Name: Help
   - Class: rviz_common/Views
@@ -165,6 +165,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          ChestRGBD_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           Chest_link:
             Alpha: 1
             Show Axes: false
@@ -173,17 +178,12 @@ Visualization Manager:
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
+          HeadRGBD_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           Head_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          RGB2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          RGB3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -199,7 +199,12 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          HeadRGBD_link:
+          RGB2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RGB3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -242,6 +247,10 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          left_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           left_gripper_base:
             Alpha: 1
             Show Axes: false
@@ -257,6 +266,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          right_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           right_gripper_base:
             Alpha: 1
             Show Axes: false
@@ -272,14 +285,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          left_arm_ee_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          right_arm_ee_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           world:
             Alpha: 1
             Show Axes: false
@@ -288,7 +293,7 @@ Visualization Manager:
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
         Show Robot Collision: false
-        Show Robot Visual: true
+        Show Robot Visual: false
         Show Trail: false
         State Display Time: 0.05 s
         Trail Step Size: 1
@@ -424,6 +429,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          ChestRGBD_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           Chest_link:
             Alpha: 1
             Show Axes: false
@@ -432,17 +442,12 @@ Visualization Manager:
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
+          HeadRGBD_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           Head_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          RGB2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          RGB3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -458,7 +463,12 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          HeadRGBD_link:
+          RGB2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RGB3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -501,6 +511,10 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          left_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           left_gripper_base:
             Alpha: 1
             Show Axes: false
@@ -516,6 +530,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          right_arm_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           right_gripper_base:
             Alpha: 1
             Show Axes: false
@@ -531,14 +549,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          left_arm_ee_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          right_arm_ee_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           world:
             Alpha: 1
             Show Axes: false
@@ -552,7 +562,7 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
-        curobo_traj: true
+        curobo_mpc: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -605,19 +615,21 @@ Visualization Manager:
           Value: false
         Chassis_link:
           Value: false
+        ChestRGBD_link:
+          Value: true
         Chest_link:
           Value: false
+        HeadRGBD_link:
+          Value: false
         Head_link:
-          Value: false
-        RGB2_link:
-          Value: false
-        RGB3_link:
           Value: false
         Neck_link:
           Value: false
         RGB1_link:
           Value: false
-        HeadRGBD_link:
+        RGB2_link:
+          Value: false
+        RGB3_link:
           Value: false
         Thigh_link:
           Value: false
@@ -645,7 +657,19 @@ Visualization Manager:
           Value: true
         left_arm_ee_link:
           Value: true
+        left_gripper_base:
+          Value: true
+        left_gripper_left_jaw:
+          Value: true
+        left_gripper_right_jaw:
+          Value: true
         right_arm_ee_link:
+          Value: true
+        right_gripper_base:
+          Value: true
+        right_gripper_left_jaw:
+          Value: true
+        right_gripper_right_jaw:
           Value: true
         world:
           Value: false
@@ -655,21 +679,6 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        Head_link:
-          RGB2_link:
-            {}
-          RGB3_link:
-            {}
-          RGB1_link:
-            {}
-          HeadRGBD_link:
-            camera_link:
-              camera_depth_frame:
-                camera_color_frame:
-                  camera_color_optical_frame:
-                    {}
-                camera_depth_optical_frame:
-                  {}
         world:
           base_link:
             Chassis_link:
@@ -689,9 +698,9 @@ Visualization Manager:
                                         left_gripper_base:
                                           left_arm_ee_link:
                                             {}
-                                          left_gripper_right_jaw:
-                                            {}
                                           left_gripper_left_jaw:
+                                            {}
+                                          left_gripper_right_jaw:
                                             {}
                       AR5-5_08R-W4C1C5-ZY2_base:
                         AR5-5_08R-W4C1C5-ZY2_link1:
@@ -705,12 +714,28 @@ Visualization Manager:
                                         right_gripper_base:
                                           right_arm_ee_link:
                                             {}
-                                          right_gripper_right_jaw:
-                                            {}
                                           right_gripper_left_jaw:
                                             {}
-                      Neck_link:
+                                          right_gripper_right_jaw:
+                                            {}
+                      ChestRGBD_link:
                         {}
+                      Neck_link:
+                        Head_link:
+                          HeadRGBD_link:
+                            camera_link:
+                              camera_depth_frame:
+                                camera_color_frame:
+                                  camera_color_optical_frame:
+                                    {}
+                                camera_depth_optical_frame:
+                                  {}
+                          RGB1_link:
+                            {}
+                          RGB2_link:
+                            {}
+                          RGB3_link:
+                            {}
               Wheel1_link:
                 {}
               Wheel2_link:
@@ -783,7 +808,7 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
-        curobo_goal: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -809,7 +834,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.895099639892578
+      Distance: 3.4330005645751953
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -824,10 +849,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.2299998253583908
+      Pitch: 0.36999982595443726
       Target Frame: world
       Value: Orbit (rviz_default_plugins)
-      Yaw: 2.11151123046875
+      Yaw: 2.7815098762512207
     Saved: ~
 Window Geometry:
   Displays:
@@ -841,7 +866,7 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000001e50000025afc0200000005fc0000003d000001cc0000019a0100001cfa000000010100000003fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000000ffffffff000001e500fffffffb000000100044006900730070006c0061007900730100000000000002b40000015600fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c0069006400650072010000020f000000410000004100fffffffb0000000800480065006c0070000000029a0000006e0000006e00fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c00730047007500690100000256000000410000004100fffffffb0000000a0049006d006100670065010000026b0000002c0000000000000000000003b40000025a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000001e50000025efc0200000005fc0000003b000001cf000001840100001afa000000020100000003fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000000ffffffff000001c900fffffffb000000100044006900730070006c0061007900730100000000000002b40000015600fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720100000210000000420000003f00fffffffb0000000800480065006c0070000000029a0000006e0000006e00fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c00730047007500690100000258000000410000003f00fffffffb0000000a0049006d006100670065010000026b0000002c0000000000000000000003b40000025e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RvizVisualToolsGui:
     collapsed: false
   Views:
