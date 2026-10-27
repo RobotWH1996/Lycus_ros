@@ -7,6 +7,7 @@ Panels:
         - /Global Options1
         - /MotionPlanning1
         - /MotionPlanning1/Planned Path1
+        - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 307
@@ -562,7 +563,7 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
-        curobo_mpc: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -658,19 +659,19 @@ Visualization Manager:
         left_arm_ee_link:
           Value: true
         left_gripper_base:
-          Value: true
+          Value: false
         left_gripper_left_jaw:
-          Value: true
+          Value: false
         left_gripper_right_jaw:
-          Value: true
+          Value: false
         right_arm_ee_link:
           Value: true
         right_gripper_base:
-          Value: true
+          Value: false
         right_gripper_left_jaw:
-          Value: true
+          Value: false
         right_gripper_right_jaw:
-          Value: true
+          Value: false
         world:
           Value: false
       Marker Scale: 1
@@ -679,6 +680,21 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
+        Head_link:
+          HeadRGBD_link:
+            camera_link:
+              camera_depth_frame:
+                camera_color_frame:
+                  camera_color_optical_frame:
+                    {}
+                camera_depth_optical_frame:
+                  {}
+          RGB1_link:
+            {}
+          RGB2_link:
+            {}
+          RGB3_link:
+            {}
         world:
           base_link:
             Chassis_link:
@@ -721,21 +737,7 @@ Visualization Manager:
                       ChestRGBD_link:
                         {}
                       Neck_link:
-                        Head_link:
-                          HeadRGBD_link:
-                            camera_link:
-                              camera_depth_frame:
-                                camera_color_frame:
-                                  camera_color_optical_frame:
-                                    {}
-                                camera_depth_optical_frame:
-                                  {}
-                          RGB1_link:
-                            {}
-                          RGB2_link:
-                            {}
-                          RGB3_link:
-                            {}
+                        {}
               Wheel1_link:
                 {}
               Wheel2_link:
@@ -750,7 +752,7 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
-        curobo_world: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -834,25 +836,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.4330005645751953
+      Distance: 2.998251438140869
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.228534534573555
-        Y: -0.07697843015193939
-        Z: 1.17003333568573
+        X: -0.7216712832450867
+        Y: 0.1957801729440689
+        Z: 1.1445958614349365
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.36999982595443726
+      Pitch: 0.5349997878074646
       Target Frame: world
       Value: Orbit (rviz_default_plugins)
-      Yaw: 2.7815098762512207
+      Yaw: 1.3065106868743896
     Saved: ~
 Window Geometry:
   Displays:
