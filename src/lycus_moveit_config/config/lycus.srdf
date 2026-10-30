@@ -61,7 +61,7 @@
     <disable_collisions link1="Head_link" link2="RGB1_link" reason="Adjacent"/>
     <disable_collisions link1="Head_link" link2="RGB2_link" reason="Adjacent"/>
     <disable_collisions link1="Head_link" link2="RGB3_link" reason="Adjacent"/>
-    <disable_collisions link1="HeadRGBD_link" link2="camera_link" reason="Adjacent"/>
+    <disable_collisions link1="HeadRGBD_link" link2="camera_01_link" reason="Adjacent"/>
     <disable_collisions link1="Chest_link" link2="ChestRGBD_link" reason="Adjacent"/>
     <disable_collisions link1="Chest_link" link2="AR5-5_08L-W4C1C5-ZY2_base" reason="Adjacent"/>
     <disable_collisions link1="Chest_link" link2="AR5-5_08R-W4C1C5-ZY2_base" reason="Adjacent"/>
@@ -102,7 +102,7 @@
     <disable_collisions link1="Neck_link" link2="RGB1_link" reason="Never"/>
     <disable_collisions link1="Neck_link" link2="RGB2_link" reason="Never"/>
     <disable_collisions link1="Neck_link" link2="RGB3_link" reason="Never"/>
-    <disable_collisions link1="Neck_link" link2="camera_link" reason="Never"/>
+    <disable_collisions link1="Neck_link" link2="camera_01_link" reason="Never"/>
     <disable_collisions link1="Neck_link" link2="ChestRGBD_link" reason="Never"/>
     <disable_collisions link1="HeadRGBD_link" link2="RGB1_link" reason="Never"/>
 

@@ -244,7 +244,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_link:
+          camera_01_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -508,7 +508,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_link:
+          camera_01_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -654,7 +654,7 @@ Visualization Manager:
           Value: false
         camera_depth_optical_frame:
           Value: false
-        camera_link:
+        camera_01_link:
           Value: true
         left_arm_ee_link:
           Value: true
@@ -682,7 +682,7 @@ Visualization Manager:
       Tree:
         Head_link:
           HeadRGBD_link:
-            camera_link:
+            camera_01_link:
               camera_depth_frame:
                 camera_color_frame:
                   camera_color_optical_frame:
@@ -821,7 +821,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: camera_link
+    Fixed Frame: camera_01_link
     Frame Rate: 30
   Name: root
   Tools:
