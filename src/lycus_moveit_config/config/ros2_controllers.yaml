@@ -13,6 +13,10 @@ controller_manager:
       type: joint_trajectory_controller/JointTrajectoryController
     head_controller:
       type: joint_trajectory_controller/JointTrajectoryController
+    left_gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    right_gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
@@ -90,3 +94,55 @@ head_controller:
     state_interfaces:
       - position
       - velocity
+
+# Independent jaw control; the arm trajectory controllers keep their original joints.
+# Positions are URDF prismatic joint values in metres: 0 open, -0.042 closed.
+left_gripper_controller:
+  ros__parameters:
+    joints: [left_gripper]
+    command_interfaces: [position]
+    state_interfaces: [position, velocity]
+    constraints:
+      goal_time: 1.0
+      left_gripper: {goal: 0.0005}
+right_gripper_controller:
+  ros__parameters:
+    joints: [right_gripper]
+    command_interfaces: [position]
+    state_interfaces: [position, velocity]
+    constraints:
+      goal_time: 1.0
+      right_gripper: {goal: 0.0005}
+
+# The sole simulation joint-state publisher owns both body and actual jaw joints.
+# Mimic joints are computed by robot_state_publisher from the URDF.
+joint_state_broadcaster:
+  ros__parameters:
+    joints:
+      - AR5-5_08L-W4C1C5-ZY2_joint_1
+      - AR5-5_08L-W4C1C5-ZY2_joint_2
+      - AR5-5_08L-W4C1C5-ZY2_joint_3
+      - AR5-5_08L-W4C1C5-ZY2_joint_4
+      - AR5-5_08L-W4C1C5-ZY2_joint_5
+      - AR5-5_08L-W4C1C5-ZY2_joint_6
+      - AR5-5_08L-W4C1C5-ZY2_joint_7
+      - AR5-5_08R-W4C1C5-ZY2_joint_1
+      - AR5-5_08R-W4C1C5-ZY2_joint_2
+      - AR5-5_08R-W4C1C5-ZY2_joint_3
+      - AR5-5_08R-W4C1C5-ZY2_joint_4
+      - AR5-5_08R-W4C1C5-ZY2_joint_5
+      - AR5-5_08R-W4C1C5-ZY2_joint_6
+      - AR5-5_08R-W4C1C5-ZY2_joint_7
+      - Calf_joint
+      - Thigh_joint
+      - Waist_joint
+      - Chest_joint
+      - Neck_joint
+      - Head_joint
+      - Wheel1_joint
+      - Wheel2_joint
+      - Wheel3_joint
+      - Wheel4_joint
+      - left_gripper
+      - right_gripper
+    interfaces: [position, velocity]

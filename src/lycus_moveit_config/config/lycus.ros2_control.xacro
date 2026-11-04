@@ -174,14 +174,16 @@
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <!-- 只发布开合，不接入轨迹控制器。mimic 关节由 robot_state_publisher 计算。 -->
+            <!-- Independent jaw command interfaces; mimic joints are handled by robot_state_publisher. -->
             <joint name="left_gripper">
+                <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['left_gripper']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
             <joint name="right_gripper">
+                <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['right_gripper']}</param>
                 </state_interface>

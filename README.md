@@ -16,7 +16,7 @@
 
 ```bash
 source /opt/ros/humble/setup.zsh
-cd /home/victor/wh/Lycus_ros
+cd /home/ai/wh/Lycus_ros
 colcon build --symlink-install
 source install/setup.zsh
 ```
@@ -90,3 +90,74 @@ ros2 service call /compute_ik lycus_motion_planning/srv/ComputeIK "{group_name: 
 ```bash
 ros2 service call /play_rosbag lycus_motion_planning/srv/PlayRosbag "{group_name: 'left_arm', file_path: '/path/to/your.db3', enable_time_parameterization: true}"
 ```
+
+## 与 cuRobo / 实机统一的关节接口
+
+本工程模拟本体与夹爪 SDK 的运动和反馈，不需要夹爪厂商协议。
+cuRobo 只从 `/joint_states` 刷新本体与夹爪状态。完整任务轨迹包含手臂关节和
+`left_gripper`、`right_gripper` 的位置；cuRobo debug 模式按阶段下发对应通用控制器，deploy 模式交给实机适配脚本。
+不要把命令发布到 `/joint_states`：该话题只承载状态反馈。
+
+### 无 MoveIt / RViz 的 SDK 仿真
+
+```bash
+source /opt/ros/humble/setup.bash
+source /home/ai/wh/Lycus_ros/install/setup.bash
+ros2 launch lycus_moveit_config sdk_sim.launch.py
+```
+
+该启动文件只启动 mock ros2_control、控制器和 robot_state_publisher，
+不会启动 move_group 或 RViz。只需要关节反馈、无需 TF 时：
+
+```bash
+ros2 launch lycus_moveit_config sdk_sim.launch.py publish_tf:=false
+```
+
+与 curobo_ros_python 的 deploy 启动文件一起使用时，只保留一份模型 TF 发布：
+可保留本入口的 TF，并给 deploy 传 publish_robot_tf:=false；
+或将本入口设为 publish_tf:=false，让 deploy 发布模型 TF。
+
+需要 MoveIt / RViz 时仍使用原来的 `demo.launch.py`；两种启动方式选一个，
+它们使用同一套硬件描述、控制器配置和关节状态来源。实机不启动这两种 mock 启动文件，
+由实机转接脚本输出同样的 `/joint_states` 即可。
+
+### 命令接口与关节单位
+
+| 对象 | Action | 类型 |
+|---|---|---|
+| 左臂 | `/left_arm_controller/follow_joint_trajectory` | `control_msgs/action/FollowJointTrajectory` |
+| 右臂 | `/right_arm_controller/follow_joint_trajectory` | `control_msgs/action/FollowJointTrajectory` |
+| 双臂 | `/both_arms_controller/follow_joint_trajectory` | `control_msgs/action/FollowJointTrajectory` |
+| 左夹爪 | `/left_gripper_controller/follow_joint_trajectory` | `control_msgs/action/FollowJointTrajectory` |
+| 右夹爪 | `/right_gripper_controller/follow_joint_trajectory` | `control_msgs/action/FollowJointTrajectory` |
+
+双臂控制器默认 inactive，因为它与两个单臂控制器使用相同的关节。
+沿用现有控制器切换方式，经 `/controller_manager/switch_controller` 切换后再执行。
+夹爪使用独立控制器，不占用手臂控制器，也不增加手臂规划组的自由度。
+
+夹爪位置是 URDF 滑动关节的米单位：`0.0` 全开、`-0.042` 全闭，范围 `[-0.042, 0]`。
+FollowJointTrajectory 按 time_from_start 插补夹爪位置；这里不是归一化行程值。
+mock position 硬件不模拟夹持力、物体接触或实机夹持检测。夹爪控制器只包含自己的实际关节，
+不接收 mimic 关节，也不占用手臂控制器。
+
+```bash
+# 左夹爪闭合
+ros2 action send_goal /left_gripper_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory \
+  "{trajectory: {joint_names: [left_gripper], points: [{positions: [-0.042], time_from_start: {sec: 1}}]}}"
+
+# 右夹爪张开
+ros2 action send_goal /right_gripper_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory \
+  "{trajectory: {joint_names: [right_gripper], points: [{positions: [0.0], time_from_start: {sec: 1}}]}}"
+```
+
+### 状态刷新与显示
+
+`mock_components/GenericSystem` 接收位置命令并更新硬件状态，
+`joint_state_broadcaster` 统一以控制器更新频率（当前 100 Hz）发布 `/joint_states`，
+其中包括 24 个本体关节和两个实际夹爪关节。该仿真链路只有这一份状态发布者。
+cuRobo 订阅同一份反馈刷新关节状态；需要显示时，
+`/joint_states → robot_state_publisher → TF → RViz` 就会显示开合。
+
+`left_gripper_mimic`、`right_gripper_mimic` 由 URDF mimic 关系计算，
+不单独命令，也不重复发布到 `/joint_states`。不能同时启动关节滑条、另一份 mock 控制器，
+或其他向同一个 `/joint_states` 写入这些关节的节点。

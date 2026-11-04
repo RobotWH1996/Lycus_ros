@@ -7,6 +7,8 @@ moveit_simple_controller_manager:
     - both_arms_controller
     - torso_controller
     - head_controller
+    - left_gripper_controller
+    - right_gripper_controller
 
   left_arm_controller:
     type: FollowJointTrajectory
@@ -65,5 +67,17 @@ moveit_simple_controller_manager:
     joints:
       - Neck_joint
       - Head_joint
+    action_ns: follow_joint_trajectory
+    default: true
+
+  # Grippers remain separate from all arm planning groups and arm trajectories.
+  left_gripper_controller:
+    type: FollowJointTrajectory
+    joints: [left_gripper]
+    action_ns: follow_joint_trajectory
+    default: true
+  right_gripper_controller:
+    type: FollowJointTrajectory
+    joints: [right_gripper]
     action_ns: follow_joint_trajectory
     default: true
