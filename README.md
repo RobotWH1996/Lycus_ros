@@ -47,6 +47,22 @@ ros2 launch lycus_motion_planning lycus_motion_planning.launch.py
 ros2 launch lycus_description display.launch.py
 ```
 
+## 只显示真实机器人状态
+
+```bash
+ros2 launch lycus_description view.launch.py
+```
+
+只启动 `robot_state_publisher` 和 RViz，订阅真实 `/joint_states`，显示模型、TF 和网格；不启动关节状态发布器、mock 硬件、控制器或 MoveIt，不发布关节角及运动指令。没有驱动反馈时不会生成假关节角，活动连杆的 TF 可能不完整。RViz 使用 `base_link` 为固定坐标系。
+
+如果 cuRobo deploy 或其他节点已经发布机器人 TF，使用：
+
+```bash
+ros2 launch lycus_description view.launch.py publish_robot_tf:=false
+```
+
+这时只启动 RViz，从本包安装的 URDF 文件加载模型，使用已有 `/tf`、`/tf_static`；不读取规划器 `/robot_description` 中的相对网格路径。已有 TF 发布者须使用相同机器人几何与关节名称。可用 `joint_states_topic:=/other/joint_states` 更换订阅 Topic；`use_rviz:=false` 只启动 TF 发布节点。更换模型可传 `robot_urdf:=/absolute/path/robot.urdf`。
+
 ## 服务调用
 
 另开一个已经 `source install/setup.zsh` 的终端。
